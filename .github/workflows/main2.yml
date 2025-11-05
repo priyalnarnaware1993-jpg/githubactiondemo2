@@ -18,12 +18,18 @@ jobs:
     transform-data-job:
      runs-on: ubuntu-latest
      steps:
+            - name: checkout code
+              uses: actions/checkout@v2
+
             - name: run transform.py
               run: python transform.py
-              
+
     load-data-job:
         runs-on: ubuntu-latest
         steps:
+            - name: checkout code
+              uses: actions/checkout@v2
+
             - name: run load.py
               run: python load.py          
 
