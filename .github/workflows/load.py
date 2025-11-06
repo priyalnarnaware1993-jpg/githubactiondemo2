@@ -1,1 +1,0 @@
-print ("Load Data to GCS/ADLS")
